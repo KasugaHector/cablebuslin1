@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cablebus Linea 1 </title>
+    <title> Mapa del Cablebus Linea 1</title>
     <style>
         * {
             margin: 0;
@@ -46,13 +46,13 @@
         
         h2 {
             font-size: 1.5rem;
-            color: #030011;
+            color: #ffde59;
             margin-bottom: 5px;
         }
         
         .subtitle {
             font-size: 1.2rem;
-            color: #fcfcfc;
+            color: #a8c6ff;
             max-width: 800px;
             line-height: 1.5;
         }
@@ -90,7 +90,7 @@
             height: 300px;
             border-radius: 15px;
             background-color: rgba(0, 0, 0, 0.3);
-            border: 3px dashed #65646A;
+            border: 3px dashed #ffde59;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -120,7 +120,7 @@
             transform: translate(-50%, -50%);
             width: 70%;
             height: 40%;
-            border: 3px solid #3AC1E1;
+            border: 3px solid #4CAF50;
             border-radius: 10px;
             animation: pulse-frame 2s infinite;
         }
@@ -140,8 +140,8 @@
         }
         
         .camera-button {
-            background: linear-gradient(to right, #3AC1E1, #2dcff3);
-            color: #ffffff;
+            background: linear-gradient(to right, #ffde59, #ffcc00);
+            color: #1a3a8f;
             border: none;
             padding: 12px 30px;
             font-size: 1rem;
@@ -166,7 +166,7 @@
         }
         
         .camera-button:disabled {
-            background: #3AC1E1;
+            background: #666;
             cursor: not-allowed;
             transform: none;
         }
@@ -239,7 +239,7 @@
         }
         
         .map-title {
-            color: #65646A;
+            color: #1a3a8f;
             text-align: center;
             margin-bottom: 20px;
             font-size: 2rem;
@@ -252,7 +252,7 @@
         }
         
         .instructions {
-            background-color: rgba(59, 58, 58, 0.1);
+            background-color: rgba(255, 255, 255, 0.1);
             border-radius: 15px;
             padding: 25px;
             margin-top: 30px;
@@ -285,8 +285,8 @@
         }
         
         .step-number {
-            background-color: #3AC1E1;
-            color: #ffffff;
+            background-color: #ffde59;
+            color: #1a3a8f;
             width: 30px;
             height: 30px;
             border-radius: 50%;
@@ -299,7 +299,7 @@
         .back-button {
             background-color: rgba(255, 255, 255, 0.1);
             color: white;
-            border: 1px solid #3AC1E1(255, 255, 255, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.3);
             padding: 12px 30px;
             font-size: 1rem;
             border-radius: 50px;
@@ -388,13 +388,13 @@
 <body>
     <div class="container">
         <header>
-            <h1>Cablebus Linea 1</h1>
-            <p class="subtitle">Escanea el código QR de tu tarjeta del Metro con la cámara para visualizar el mapa completo del Cablebus Linea 1</p>
+            <h1>Visualizador del Mapa del Tren Ligero CDMX</h1>
+            <p class="subtitle"> Escanea Tu Tarjeta de Movilidad CDMX</p>
         </header>
         
         <section class="scan-section">
-            <h2>Escanear Tarjeta del Metro CDMX</h2>
-            <p>Usa la cámara de tu dispositivo para escanear el código QR de tu tarjeta</p>
+            <h2>Escanear Tarjeta De Movilidad CDMX</h2>
+            <p>Usa la cámara de tu dispositivo para escanear tu tarjeta</p>
             
             <div class="camera-container">
                 <div class="camera-placeholder" id="cameraPlaceholder">
@@ -439,26 +439,32 @@
         
         <section class="map-section" id="mapSection">
             <div class="map-container">
-                <h2 class="map-title">Mapa del Cablebus Linea 1 de la Ciudad de México</h2>
-                <img src="assets/Cablebus_linea1.jpg" alt="Mapa del Cablebus Linea 1 CDMX CDMX" class="map-image" id="mapImage">
+                <h2 class="map-title">Mapa del Tren Ligero de la Ciudad de México</h2>
+                <img src="assets/linea_trenligero.jpg" alt="Mapa del Tren Ligero CDMX" class="map-image" id="mapImage">
             </div>
             
             <div class="instructions">
-                <h3>Información del Cablebus Linea 1 </h3>
-                <p>La Línea 1 del Cablebús conecta la zona alta de la alcaldía Gustavo A. Madero, al norte de la CDMX y cerca de los límites con el municipio de Tlalnepantla, en el Estado de México; desde la estación Indios Verdes hasta Cuautepec. Asimismo, tiene un ramal hacia la estación Tlalpexco. </p>
+                <h3>Información De la Cablebus Linea 1</h3>
+                <p>La Línea 1 del Cablebús conecta la zona alta de la alcaldía Gustavo A. Madero, al norte de la CDMX y cerca de los límites con el municipio de Tlalnepantla, en el Estado de México; desde la estación Indios Verdes hasta Cuautepec. Asimismo, tiene un ramal hacia la estación Tlalpexco.</p>
                 
                 <div class="step">
                     <div class="step-number">1</div>
-                    <div>Estación Terminal:  Indios Verdes (conexión con CETRAM Indios Verdes. )</div>
+                    <div>Estación Terminal: Indios Verdes </div>
                 </div>
                 
                 <div class="step">
                     <div class="step-number">2</div>
-                    <div>Estación Terminal: Cuautepec. (conexión con Red de Transporte de Pasajeros (RTP))</div>
+                    <div> Estación Terminal: Cuautepec </div>
                 </div>
                 
-                <p>El horario de servicio es de 5:00 A 23:00 HRS, 6:00 A 23:00 HRS, 7:00 A 23:00 HRS entre semana</p>
+                <p>El horario de servicio es de lunes a domingo de 5:00 a 24:00 horas.</p>
                 
+                <div class="step" id="cardInfo" style="display: none;">
+                    <div class="step-number">ℹ</div>
+                    <div id="cardData">Información de la tarjeta escaneada aparecerá aquí</div>
+                </div>
+            </div>
+            
             <button class="back-button" id="backButton">Regresar al Escáner</button>
         </section>
         
@@ -686,14 +692,8 @@
                 trips: "8"
             };
             
-            cardInfo.style.display = "flex";
-            cardData.innerHTML = `
-                <div><strong>Tarjeta:</strong> ${demoData.cardType}</div>
-                <div><strong>UID:</strong> ${demoData.cardUID}</div>
-                <div><strong>Saldo:</strong> $${demoData.balance} MXN</div>
-                <div><strong>Último uso:</strong> ${demoData.lastUse}</div>
-                <div><strong>Viajes este mes:</strong> ${demoData.trips}</div>
-            `;
+
+            ;
             
             statusMessage.textContent = "✓ Modo demostración activado - Tarjeta simulada escaneada";
             statusMessage.className = "status-message status-success";
@@ -742,3 +742,4 @@
         
     </script>
 </body>
+</html>
